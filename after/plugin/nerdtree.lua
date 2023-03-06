@@ -1,0 +1,2 @@
+-- Requires that a NERD font be used in the terminal 
+-- for mac os https://www.geekbits.io/how-to-install-nerd-fonts-on-mac/

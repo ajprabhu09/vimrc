@@ -1,1 +1,2 @@
-print("Hello from the plugin")
+pa:w
+rint("Hello from the plugin")

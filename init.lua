@@ -4,5 +4,5 @@
 
 require("amprabhu.remap") -- imports the file present inside the module on startup
 require("amprabhu.packer") -- import packer
-
+require("amprabhu.sets")
 -- require("plugins.after.telescope")

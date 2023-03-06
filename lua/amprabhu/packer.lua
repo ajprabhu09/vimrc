@@ -45,4 +45,8 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'}, -- Optional
 	  }
   }
+
+  use 'preservim/nerdtree'
+  use 'ryanoasis/vim-devicons'
+  use 'airblade/vim-gitgutter'
 end)
