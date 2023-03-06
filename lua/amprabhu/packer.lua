@@ -49,4 +49,5 @@ return require('packer').startup(function(use)
   use 'preservim/nerdtree'
   use 'ryanoasis/vim-devicons'
   use 'airblade/vim-gitgutter'
+ -- use 'fedepujol/move.nvim' -- fast movement of code blocks and lines https://github.com/fedepujol/move.nvim
 end)
