@@ -19,7 +19,7 @@ return require('packer').startup(function(use)
   use 'nvim-treesitter/playground'
   use 'ThePrimeagen/harpoon'
   use 'mbbill/undotree'
-	
+
   use 'tpope/vim-fugitive'
 
   -- LSP stuff
@@ -46,8 +46,45 @@ return require('packer').startup(function(use)
 	  }
   }
 
-  use 'preservim/nerdtree'
+
+ use {
+     'nvim-tree/nvim-tree.lua',
+     requires = {
+         'nvim-tree/nvim-web-devicons', -- optional, for file icons
+     },
+     tag = 'nightly' -- optional, updated every week. (see issue #1193)
+ }
+
   use 'ryanoasis/vim-devicons'
   use 'airblade/vim-gitgutter'
- -- use 'fedepujol/move.nvim' -- fast movement of code blocks and lines https://github.com/fedepujol/move.nvim
+  -- use 'fedepujol/move.nvim' -- fast movement of code blocks and lines https://github.com/fedepujol/move.nvim
+  -- TODO: Create after file for this
+  use {
+	  "folke/todo-comments.nvim",
+	  requires = "nvim-lua/plenary.nvim",
+	  config = function()
+		  require("todo-comments").setup {
+			  -- your configuration comes here
+			  -- or leave it empty to use the default settings
+			  -- refer to the configuration section below
+		  }
+	  end
+  }
+-- TODO: Create the after file for this
+  use 'tpope/vim-commentary'
+
+-- TODO: Create after file for this
+  use {
+  "folke/trouble.nvim",
+  requires = "nvim-tree/nvim-web-devicons",
+  config = function()
+    require("trouble").setup {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    }
+  end
+}
+
+
 end)
