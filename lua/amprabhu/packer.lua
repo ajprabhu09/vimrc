@@ -94,5 +94,5 @@ return require('packer').startup(function(use)
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
     use 'simrat39/symbols-outline.nvim'
-
+    use 'WhoIsSethDaniel/toggle-lsp-diagnostics.nvim'
 end)
